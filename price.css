@@ -1,0 +1,434 @@
+/* Google fonts – cwTeXKai (Chinese Traditional) 楷體字體 */
+/* @import url(https://fonts.googleapis.com/earlyaccess/cwtexkai.css); */
+/* Google fonts：cwTeXYen (Chinese Traditional) 圓體字體 */
+/* @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css); */
+/* Google fonts：cwTeXFangSong (Chinese Traditional) 仿宋體字體 */
+/* @import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css); */
+/* Google fonts：Noto Sans TC (Chinese Traditional) 黑體（思源黑體） */
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+/* Google fonts – cwTeXMing (Chinese Traditional) 明體字體 */
+/* @import url(https://fonts.googleapis.com/earlyaccess/cwtexming.css); */
+
+body {
+  /* Google fonts – cwTeXKai (Chinese Traditional) 楷體字體 */
+  /* font-family: "cwTeXKai", serif; */
+  /* Google fonts：cwTeXYen (Chinese Traditional) 圓體字體 */
+  /* font-family: "cwTeXYen", serif; */
+  /* Google fonts：cwTeXFangSong (Chinese Traditional) 仿宋體字體 */
+  /* font-family: "cwTeXFangSong", serif; */
+  /* Google fonts：Noto Sans TC (Chinese Traditional) 黑體（思源黑體） */
+  font-family: "Noto Sans TC", "微軟正黑體", sans-serif;
+  /* Google fonts – cwTeXMing (Chinese Traditional) 明體字體 */
+  /* font-family: "cwTeXMing", serif; */
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 1.5;
+}
+.container{
+    max-width:1366px;
+    margin: 0 auto;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+h1{
+    font-size: 48px;
+    font-weight: bolder;
+    line-height: 1.5;
+}
+h2{
+    font-size: 32px;
+    font-weight: bolder;
+}
+h3{
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: center;
+}
+h4{
+    font-weight: bolder;
+    font-size: 18px;
+}
+h5{
+    font-weight: bolder;
+    font-size: 16px;
+}
+hr{
+    background-color: #DDDDDD;
+    border:0;
+    height: 1px;
+    margin: 24px 0;
+}
+p{
+    line-height: 1.5;
+}
+.p-fsz32px{
+    font-size: 32px;
+}
+.p-fsz28px{
+    font-size: 28px;
+}
+.p-fsz16px{
+    font-size: 16px;
+}
+.p-fsz12px{
+    font-size: 12px;
+}
+.d-flex{
+    display: flex;
+}
+.b-radius-12px{
+    border-radius:12px;
+}
+.b-radius-27px{
+    border-radius: 27px;
+    border: 1px solid #56C4C5;
+}
+.b-shadow{
+    box-shadow:0px 2px 10px #00000014;
+}
+.p-blue-color{
+    color: #56C4C5;
+}
+.p-gray-color{
+    color: #747474;
+}
+.wrap{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+.rectangle{
+    width: 100%;
+    height: 470px;
+    border-radius: 0 0 0 300px;
+    background-color: #F7F9FD;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.topbtn{
+    width: 71px;
+    height: 71px;
+    border-radius: 50%;
+    background-color: #56C4C5;
+    padding: 20px 17px 25px 18px;
+    color: #FFFFFF;
+    position: fixed;
+    right: 48px;
+    bottom: 48px;
+    font-size: 18px;
+}
+.header{
+    align-items: center;
+    padding: 24px 139px;
+    justify-content:space-between;
+    
+}
+.logo img{
+    width: 218.06px;
+    height: auto;
+}
+.header-btn{
+    width: 128px;
+    height: 40px;
+    border-radius: 22px;
+    background-color: #FF5D50;
+    text-align: center;
+    padding: 8px 32px;
+    color: #FFFFFF;
+}
+.banner{
+    flex-direction: column;
+    align-items: start;
+    padding: 180px 500px 180px 139px;
+}
+.pgbtn{
+    justify-content: center;
+}
+.numbtn-w130{
+    height: 50px;
+    padding: 12px 32px;
+    margin: 0 8px;
+}
+.numbtn-w134{
+    height: 50px;
+    padding: 12px 32px;
+    margin: 0 8px;
+}
+.numbtn-w144{
+    height: 50px;
+    padding: 12px 32px;
+    margin: 0 8px;
+}
+.program{
+    max-width: 909px;
+    flex-direction: column;
+    margin: 0 auto 100px;
+
+}
+.program h2{
+    margin: 0 150px 48px 150px;
+
+}
+.pgbtn{
+    margin-bottom: 48px;
+}
+.pgbtn a:hover{
+    background-color:#56C4C5;
+    color: #FFFFFF;
+}
+.pgBase{
+    margin-right:8px;
+    padding: 16px 0;
+}
+.pgStandard{
+    margin-left:8px;
+    padding: 16px 0;
+}
+.numbtn,.pricebtn{
+    width: 169px;
+    height: 108px;
+    background-color: #F5F5F5;
+    padding: 24px 32px;
+    margin-top: 32px;
+}
+.col{
+    padding: 0 24px;
+}
+.col li{
+    list-style-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_check.svg);
+    margin: 16px 24px;
+}
+.col p{
+    text-align: center;
+}
+.row{
+    justify-content: center;
+    align-items: center;
+}
+.equal{
+    font-size: 29px;
+    width: 16px;
+    height: 42px;
+    margin: 66px 16px 33px;
+}
+.vab{
+    vertical-align:sub;
+}
+.trybtn{
+    width: 136px;
+    height: 49px;
+    padding: 12px 32px;
+    background-color: #56C4C5;
+    color: #FFFFFF;
+    margin: 32px 154px 32px 130px;
+    text-align: center;
+}
+.problem{
+    flex-direction: column;
+    align-items: center;
+}
+.problem ul{
+    max-width: 904px;
+    margin: 48px;
+}
+.problem li{
+    padding: 16px 32px;
+    min-width: 904px;
+    margin-bottom: 16px;
+}
+.qu{
+    justify-content: space-between;
+}
+.copyright{
+    background-color: #F5F5F5;
+    padding: 16px 0;
+    text-align: center;
+    color: #221E1F;
+}
+.mt24px{
+    margin-top: 24px;
+}
+@media (max-width:1024px) {
+    .container{
+        max-width: 1024px;
+        padding: 0 20px;
+    }
+    .rectangle{
+        display: none;
+    }
+    .header{
+        padding: 16px 0;
+    }
+    .banner{
+        padding: 130px 0;
+    }
+    .program{
+        margin: 70px 0;
+    }
+    .program h2 {
+        margin: 0 80px 48px 80px;
+    }
+    .numbtn,.pricebtn{
+        width: 139px;
+        height: 89px;
+        padding: 16px 20px;
+        margin-top: 32px;
+    }
+    .col{
+        padding: 0 12px;
+        font-size: 16px;
+    }
+    .col li>p{
+        font-size: 14px;
+    }
+    .trybtn{
+        margin: 32px 30px 32px 100px;
+    }    
+    .problem li{
+        min-width: 749px;
+    }
+}
+@media (max-width:768px){
+    .container{
+        max-width: 768px;
+        padding: 0 50px;
+    }
+    .banner{
+        padding: 80px 0;
+    }
+    .program h2 {
+        margin: 0 70px 48px 70px;
+    }
+    .pgbtn{
+        flex-wrap: wrap;
+    }
+    .pgbtn a{
+        margin: 10px;
+    }
+    .pgcontent{
+        flex-wrap: wrap;
+    }
+    .pgBase{
+        margin: 30px 20px;
+    }
+    .pgStandard{
+        margin: 30px 20px;
+    }
+    .problem li{
+        min-width: 550px;
+    }
+    
+}
+@media (max-width:576px){
+    .container{
+        max-width: 576px;
+        padding: 0 20px;
+    }
+    .program h2 {
+        margin: 0 40px 48px 40px;
+        text-align: center;
+    }
+    .pgBase{
+        margin: 30px auto;
+    }
+    .pgStandard{
+        margin: 30px auto;
+    }
+    .problem li{
+        min-width: 350px;
+    }
+}
+@media (max-width:376px){
+    .wrap{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner_sm.svg);
+        background-position: 0 72px;
+    }
+    .topbtn{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #56C4C5;
+        padding: 10px 10px 15px 10px;
+        color: #FFFFFF;
+        left: 309px;
+    }
+    .container{
+        max-width: 376px;
+        padding: 0 20px;
+    }
+    .logo{
+        width: 50%;
+    }
+    .problem li{
+        max-width: 330px;
+    }
+    .pgBase{
+        margin: 20px auto;
+    }
+    .pgStandard{
+        margin: 20px auto;
+    }
+    .equal{
+        margin: 66px 8px 33px;
+    }
+}

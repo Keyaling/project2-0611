@@ -1,0 +1,589 @@
+/* Google fonts – cwTeXKai (Chinese Traditional) 楷體字體 */
+/* @import url(https://fonts.googleapis.com/earlyaccess/cwtexkai.css); */
+/* Google fonts：cwTeXYen (Chinese Traditional) 圓體字體 */
+/* @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css); */
+/* Google fonts：cwTeXFangSong (Chinese Traditional) 仿宋體字體 */
+/* @import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css); */
+/* Google fonts：Noto Sans TC (Chinese Traditional) 黑體（思源黑體） */
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+/* Google fonts – cwTeXMing (Chinese Traditional) 明體字體 */
+/* @import url(https://fonts.googleapis.com/earlyaccess/cwtexming.css); */
+
+body {
+  /* Google fonts – cwTeXKai (Chinese Traditional) 楷體字體 */
+  /* font-family: "cwTeXKai", serif; */
+  /* Google fonts：cwTeXYen (Chinese Traditional) 圓體字體 */
+  /* font-family: "cwTeXYen", serif; */
+  /* Google fonts：cwTeXFangSong (Chinese Traditional) 仿宋體字體 */
+  /* font-family: "cwTeXFangSong", serif; */
+  /* Google fonts：Noto Sans TC (Chinese Traditional) 黑體（思源黑體） */
+  font-family: "Noto Sans TC", "微軟正黑體", sans-serif;
+  /* Google fonts – cwTeXMing (Chinese Traditional) 明體字體 */
+  /* font-family: "cwTeXMing", serif; */
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* css reset */
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.container{
+    max-width:1366px;
+    margin: 0 auto;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+h1{
+    font-size: 48px;
+    font-weight: bolder;
+    line-height: 1.5;
+}
+h2{
+    font-size: 32px;
+    font-weight: bolder;
+    line-height: 1.5;
+}
+h3{
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 1.5;
+}
+h4{
+    font-weight: bolder;
+    font-size: 18px;
+}
+h5{
+    font-weight: 16px;
+    font-weight: bolder;
+}
+hr{
+    background-color: #DDDDDD;
+    border:0;
+    height: 1px;
+    margin: 24px 0;
+}
+p{
+    line-height: 1.5;
+}
+.p-blue-color{
+    color: #56C4C5;
+}
+.p-fsz16px{
+    font-size: 16px;
+}
+.p-fsz18px{
+    font-size: 18px;
+}
+.p-fsz20px{
+    font-size: 20px;
+}
+.fwbolder{
+    font-weight: bolder;
+}
+.d-flex{
+    display: flex;
+}
+.b-radius{
+    border-radius:12px;
+}
+.b-shadow{
+    box-shadow:0px 2px 10px #00000014;
+}
+.topbtn{
+    width: 71px;
+    height: 71px;
+    border-radius: 50%;
+    background-color: #56C4C5;
+    padding: 26px 17px;
+    color: #FFFFFF;
+    position: fixed;
+    right: 48px;
+    bottom: 48px;
+}
+.wrap1{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg),url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball01.svg),url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg),url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg);
+    background-repeat: no-repeat;
+    background-position: top right,-222px 540px,right -71px bottom 1020px,left 50px bottom 250px;
+}
+.header{
+    justify-content:space-between;
+    align-items: center;
+    padding: 24px 20px;
+    max-width: 1128px;
+    margin: 0 auto;
+}
+.logo img{
+    max-width: 218.06px;
+    height: auto;
+}
+.header-btn{
+    width: 128px;
+    height: 40px;
+    border-radius: 22px;
+    background-color: #FF5D50;
+    text-align: center;
+    padding: 8px 32px;
+    color: #FFFFFF;
+}
+.banner{
+    padding: 30px 0;
+    justify-content: center;
+    max-width: 1085px;
+    margin: 0 auto 100px auto;
+}
+.text1{
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 105px;
+    max-width: 553px;
+    
+}
+.banner-img{
+    width: 532px;
+    height: auto;
+}
+.socialPlatform{
+    max-width: 969px;
+    flex-direction: column;
+    margin: 100px auto;
+    text-align: center;
+}
+.socialPlatform ul{
+    justify-content:space-between;
+
+}
+.socialPlatform li{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.socialPlatform h2{
+    margin-bottom: 48px;
+}
+.socialPlatform h3{
+    margin: 24px 0;
+}
+.socialPlatform img{
+    width: 90px;
+    height: 90px;
+}
+.socialPlatform li>p{
+    color: #747474;
+}
+.client{
+    max-width: 1088px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.client>p{
+    padding: 16px 0 48px;
+    text-align: center;
+}
+.client h2{
+    margin-bottom: 16px;
+}
+.client ul{
+    justify-content: center;
+    margin-top: 48px;
+    margin: 0 -8px;
+}
+.client li{
+    width: 25%;
+    margin: 0 8px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.client img{
+    border-radius: 12px 12px 0 0;
+    width: 100%;
+}
+.client h4{
+    padding-top: 16px;
+    font-size: 16px;
+    color: #56C4C5;
+    font-weight: bolder;
+}
+.client li>p{
+    padding: 16px 16px 24px 16px;
+}
+.technique{
+    max-width: 1085px;
+    margin: 0 auto 100px auto;
+    justify-content: space-between;
+}
+.technique ul{
+    flex-wrap: wrap;
+    max-width: 507px;
+    gap:28px 47px;
+}
+.technique li{
+    width: 230px;
+    height: 284px;
+    padding: 32px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tImg{
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    box-shadow:0px 2px 10px #00000014;
+    justify-content: center;
+    align-items: center;
+}
+.text3{
+    flex-direction: column;
+    justify-content: center;
+    max-width: 395px;
+    padding:30px;
+}
+.text3 p{
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+.text3-btn{
+    width: 136px;
+    height: 49px;
+    border-radius: 27px;
+    background-color: #56C4C5;
+    text-align: center;
+    padding: 12px 32px;
+    color: #FFFFFF;
+    font-size: 18px; 
+}
+.feedback{
+    max-width: 1088px;
+    margin: 0 auto;
+}
+.feedback h2{
+    text-align: center;
+    margin-bottom: 104px;
+}
+.feedback ul{
+    justify-content: center;
+    margin-bottom: 24px;
+}
+.feedback li{
+    max-width: 352px;
+    height: auto;
+    padding: 48px 24px 24px 24px;
+    position: relative;
+    line-height: 1.5;
+    margin: 10px;
+}
+.feedback li>img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: -56px;
+    left: 32px;
+}
+.score{
+    justify-content: space-between;
+}
+.stargroup img{
+    max-width: 16.78px;
+    height: 16px;
+    margin: 8px 3px;
+}
+.dots{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    background-color: #DDDDDD;
+    border-radius: 50px;
+    margin: 4px;
+}
+.rectangle{
+    width: 16px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: #FFD153;
+    margin: 4px;
+    
+}
+footer{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg);
+    background-repeat: no-repeat;
+    background-position:bottom;
+    background-size: cover;
+    height: 503px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer h2{
+    margin-top: 360px;
+}
+.content-btn{
+    width: 136px;
+    height: 49px;
+    border-radius: 27px;
+    background-color: #56C4C5;
+    text-align: center;
+    padding: 12px 32px;
+    color: #FFFFFF;
+    font-size: 18px; 
+    margin-top: 48px;
+    margin-bottom: 100px;
+}
+.copyright{
+    background-color: #F5F5F5;
+    padding: 16px 0;
+    text-align: center;
+    color: #221E1F;
+}
+@media (max-width: 1024px){
+    .container{
+        max-width: 1024px;
+        padding: 0 10px;
+    }
+    .text1{
+        padding-right: 0;
+    }
+    .banner{
+        padding: 0 20px;
+    }
+    .banner-img{
+        width: 75%;
+        height: auto;
+    }
+    .socialPlatform{
+        margin: 0 auto;
+        padding: 60px 20px;
+    }
+    .client ul{
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    .client li{
+        min-width: 260px;
+    }
+    .technique{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0 70px;
+    }
+    .technique ul{
+        justify-content: center;
+    }
+    .text3{
+        margin: 50px 20px;
+        max-width: 395px;
+        text-align: center;
+        padding: 0;
+    }
+    .feedback ul{
+        flex-wrap: wrap;
+    }
+    .feedback li{
+        min-width: 335px;
+        padding: 32px 16px 16px 16px;
+    }
+    .person3{
+        display: none;
+    }
+    
+}
+@media (max-width: 768px) {
+    h1{
+        font-size: 32px;
+    }
+    h2{
+        font-size: 28px;
+    }
+    .wrap1{
+        background-size: 70%,40%,30%,30%;
+    }
+    .container{
+        max-width: 768px;
+        padding: 0 20px;
+    }
+    .text1{
+        padding-right: 0;
+    }
+    .banner-img{
+        width: 100%;
+        height: auto;
+    }
+    .socialPlatform{
+        margin: 0 0 30px;
+    }
+    .socialPlatform ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .socialPlatform li{
+        padding: 0 10px;
+        margin: 24px;
+    }
+    .client ul{
+        padding: 0;
+    }
+    .technique{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0 0 100px;
+        padding: 0;
+    }
+    .text3{
+        margin: 0 0 48px;
+        align-items: center;
+        text-align: center;
+    }
+    .person3,.person2{
+        display: none;
+    }
+}
+@media (max-width: 576px) {
+    .wrap1{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg),url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball01.svg),url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg);
+        background-repeat: no-repeat;
+        background-position: 10px 360px,-77px 780px,-70px 5350px;
+        background-size: 90%,35%,40%;
+        
+    }
+    .container{
+        max-width: 576px;
+        padding: 20px;
+    }
+    .logo img{
+        max-width: 130.84px;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .socialPlatform ul{
+        flex-direction: column;
+    }
+    .socialPlatform li{
+        margin-bottom: 32px;
+    }
+    .technique{
+        padding: 20px;
+    }
+    .technique ul{
+        justify-items: center;
+        margin: 20px 20px 20px 40px;
+    }
+    .text3{
+        padding-left: 0;
+        max-width: 335px;
+        margin: 32px auto;
+    }
+    footer h2{
+        font-size: 24px;
+    }
+}
+@media (max-width: 376px) {
+    .topbtn{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #56C4C5;
+        padding: 18px 10px;
+        color: #FFFFFF;
+        right: 10px;
+    }
+    .container{
+        padding: 16px;
+    }
+    .container p{
+        font-size: 16px;
+    }
+    .header{
+        padding: 20px;
+    }
+    .logo{
+        width: 50%;
+    }
+    .text1{
+        max-width: 335px;
+    }
+    .client li{
+        width: 75%;
+    }
+    .technique{
+        padding: 0;
+    }
+    .technique ul{
+        margin: 0;
+    }
+    .text3 p{
+        max-width: 300px;
+    }
+    .feedback li{
+        padding: 48px 16px 16px;
+        margin: 0;
+        max-width: 335px;
+    }
+    .dots{
+        margin-bottom: 60px;
+    }
+    
+} 
